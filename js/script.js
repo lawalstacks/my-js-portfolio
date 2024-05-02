@@ -18,7 +18,7 @@ if(sessionStorage.getItem("theme")){
 }
 
 const changeTheme = () => {
- $HTML.dataset.theme = sessionStorage.getItem("theme") = "light" ? "dark" : "light";
+$HTML.dataset.theme = sessionStorage.getItem("theme") === "light" ? "dark" : "light";
   sessionStorage.setItem("theme",$HTML.dataset.theme);
 
 }
