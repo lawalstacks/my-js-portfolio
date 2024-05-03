@@ -352,14 +352,14 @@ body{
 .img-holder {
   aspect-ratio: var(--width) / var(--height);
   background-color: transparent;
-  overflow: hidden;;
+  overflow: hidden;
+  border: 2px solid var(--on-surface);
 }
 
 .img-cover{
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
 
 .tab-content:not(.active){
@@ -597,7 +597,36 @@ overflow: hidden;
   #RESUME
 \*-----------------------------------*/
 
+.resume-tab .list{
+  display: grid;
+  grid-template-columns: repeat(auto, minmax(100px,1fr));
+  gap: 24px;
+  margin-block-end: 28px;
+}
 
+.resume-card{
+  display: grid;
+  gap: 4px;
+}
+
+.resume-card .card-subtitle{color: var(--primary)}
+
+.resume-card .card-text{color: var(--on-surface-variant)}
+
+.resume-bottom-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.resume-bottom-item{
+  background-color: var(--surface-container);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: var(--radius-small);
+}
 
 
 
