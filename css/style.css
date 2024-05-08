@@ -397,6 +397,10 @@ body{
 .btn:hover:not(:focus){
   box-shadow: var(--elevation-1);
 }
+/*.download-cv{
+  width: 200px;
+  place-self: center;
+}*/
 /**
  * TAB
  */
@@ -588,7 +592,7 @@ overflow: hidden;
 .hero .btn-wrapper {
   display: flex;
   flex-wrap: nowrap;
-  gap: 6px;
+  gap: 8px;
 }
 
 /*-----------------------------------*\
@@ -782,7 +786,10 @@ overflow: hidden;
   }
   
   .hero .container{
-    grid-template-columns: 0.2fr 1fr;
+    grid-template-columns: 0.4fr 1fr 0.3fr;
+  }
+  .download-cv{
+    max-width: 150px;
   }
 }
 
